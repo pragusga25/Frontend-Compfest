@@ -1,9 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
 html,
 body {
+  width: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  overflow: scroll;
 }
 
 a {
@@ -13,4 +32,268 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+}
+
+header nav {
+  height: 72px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.1px 104px 0 140px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.07));
+  align-items: center;
+}
+
+nav div.nav-left {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: flex;
+  font-weight: 800;
+  color: #484848;
+  line-height: 19px;
+}
+
+nav .nav-right {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  color: #484848;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+div.nav-right .nav-wrap-right {
+  display: flex;
+  color: #484848;
+}
+
+div.nav-icon {
+  font-size: 20px;
+  margin-right: 7px;
+  transform: translate(0, -10%);
+}
+
+div.nav-title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+div.active-page {
+  color: #318ff3 !important;
+}
+
+#landing-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.land-mid {
+  padding-top: 200px;
+}
+
+/* SearchForm */
+
+div.search-container {
+  position: relative;
+  transform: translate(0, 30%);
+}
+
+div h2.search-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+div h2.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.search-input {
+  width: 495px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #c4c4c4;
+  padding-left: 20px;
+  padding-right: 34px;
+}
+
+div.icon-search {
+  position: absolute;
+  right: 18px;
+  bottom: 80px;
+}
+
+button {
+  transform: translate(0, 30%);
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #999999;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 96px;
+  background-color: #f6f6f6;
+  display: flex;
+  padding: 0 50px 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+div.footer-left,
+div.footer-right {
+  color: #999999;
+  font-weight: 800;
+}
+
+div.footer-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+footer .footer-content {
+  display: flex;
+}
+
+div.icon-sosmed {
+  font-size: 20px;
+}
+
+div.footer-mid {
+  gap: 30px;
+}
+
+/* memes-page */
+
+#memes {
+  width: 100%;
+  margin-top: 120px;
+  padding: 0 80px 0 80px;
+  margin-bottom: 100px;
+}
+
+#memes div div {
+  gap: 20px;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-content {
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+  transition: 0.2s ease-in-out;
+  padding: 0 10px 0 10px;
+}
+
+div.icon-card {
+  display: flex;
+  align-items: center;
+}
+
+div.icon-card:hover {
+  color: #c4c4c4;
+}
+
+div.save-icon {
+  font-size: 24px;
+  transform: translate(-5%, 10%);
+}
+
+div.card-container {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.card-container:hover .card-content {
+  height: 80px;
+  display: flex;
+  opacity: 1;
+}
+
+/* saved page */
+
+#saved-page {
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+#saved-page h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+#empty-memes {
+  width: 100%;
+  height: 208px;
+  background: #f0f7fe;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#empty-memes p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#empty-memes button {
+  background: #0266d3;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+#empty-memes button:hover {
+  background: #318ff3;
 }
