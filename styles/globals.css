@@ -142,12 +142,6 @@ form {
   padding-right: 34px;
 }
 
-div.icon-search {
-  position: absolute;
-  right: 18px;
-  bottom: 80px;
-}
-
 button {
   transform: translate(0, 30%);
   width: 120px;

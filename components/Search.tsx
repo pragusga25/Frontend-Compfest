@@ -21,9 +21,6 @@ export const Search: React.FC<SearchProps> = ({ onSearch }): JSX.Element => {
           name="memeName"
           ref={register({ required: true })}
         />
-        <div className="icon-search">
-          <BsSearch />
-        </div>
         <br />
         <button type="submit">Search</button>
       </form>
