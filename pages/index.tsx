@@ -14,7 +14,7 @@ export interface Data {
   id?: string
 }
 
-const Home: React.FC = (): JSX.Element => {
+const Home: React.FC = () => {
   const { data } = useMemesQuery()
   const [isMemes, setIsMemes] = useState<boolean>(false)
   const myData = data?.memes
